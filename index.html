@@ -38,11 +38,51 @@
 					<li>A federated system that everyone knows: E-Mail</li>
 				</ul>
 			</section>
+			<section data-auto-animate>
+				<h2>Centralized</h2>
+			</section>
+			<section data-auto-animate>
+				<h2>Centralized</h2>
+				<object data="centralized.svg?global=paused" type="image/svg+xml" class="fragment"></object>
+			</section>
+			<section data-auto-animate>
+				<h2>Federated</h2>
+			</section>
+			<section data-auto-animate>
+				<h2>Federated</h2>
+				<object data="federated.svg?global=paused" type="image/svg+xml" class="fragment"></object>
+			</section>
+			<section data-auto-animate>
+				<h2>Federated 2</h2>
+			</section>
+			<section data-auto-animate>
+				<h2>Federated 2</h2>
+				<object data="federated-wider.svg?global=paused" type="image/svg+xml" class="fragment"></object>
+
+
+			</section>
 		</div>
 	</div>
 	<script src="dist/reveal.js"></script>
 	<script>
-		Reveal.initialize();
+		Reveal.initialize().then( () => {
+		// on slide change
+		Reveal.addEventListener( 'fragmentshown', ( event ) => {
+			const el = event.fragment;
+			if ( el.tagName === 'OBJECT' && el.contentDocument && el.contentDocument.defaultView.KeyshapeJS) {
+				var ks = el.contentDocument.defaultView.KeyshapeJS;
+				window.timeline = ks.timelines()[0];
+				timeline.play(0);
+				ks.globalPlay();
+				window.keyup = function()  {
+					console.log( 'keyup' );
+					timeline.play(0);
+					ks.globalPlay();
+				}
+			}
+		} );
+
+		});
 	</script>
 </body>
 </html>
