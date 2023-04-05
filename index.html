@@ -27,7 +27,7 @@
 <body>
 	<div class="reveal">
 		<div class="slides">
-			<section data-auto-animate>
+			<section>
 				<h1>WordPress and the Fediverse</h1>
 				<div style="font-size: .5em; margin-top: 8em">
 					Alex Kirk<br/>
@@ -38,7 +38,10 @@
 						</table>
 					</div>
 				</section>
-				<section data-auto-animate><h2>What is the Fediverse?</h2>
+
+				<section>
+				<section>
+					<h2>What is the Fediverse?</h2>
 					<ul>
 						<li class="fragment">Decentralized Webservices</li>
 						<li class="fragment">= Instead of a single well known service name, you need to know your server</li>
@@ -50,27 +53,32 @@
 					<h2>Centralized</h2>
 					<object data="centralized.svg?global=paused" type="image/svg+xml"></object>
 				</section>
+
 				<section>
 					<h2>Federated</h2>
 					<object data="federated.svg?global=paused" type="image/svg+xml"></object>
 				</section>
+
 				<section>
 					<h2>Federated with 3 Servers</h2>
 					<object data="federated-wider.svg?global=paused" type="image/svg+xml"></object>
 				</section>
+				</section>
 
-				<section data-auto-animate><h2>Examples</h2>
+				<section>
+					<h2>Examples</h2>
 					<ul>
 						<li>Twitter → Mastodon</li>
-						<li class="fragment">Facebook → Friendica</li>
-						<li class="fragment">Instagram → Pixelfed</li>
+						<li>Facebook → Friendica</li>
+						<li>Instagram → Pixelfed</li>
+						<li class="fragment">WhatsApp, Telegram, Signal → Matrix</li>
 						<li class="fragment">E-Mail</li>
-						<li class="fragment">Matrix = real-time chat</li>
-						<li class="fragment">Blogging</li>
+						<li class="fragment">Blogging<br/>(WordPress.com, Blogspot, self-hosted)</li>
 					</ul>
 				</section>
 
-				<section data-auto-animate><h2>Baffling Server Choice</h2>
+				<section>
+					<h2>Baffling Server Choice</h2>
 					<ul>
 						<li class="fragment">Before you can start, you need to choose</li>
 						<li class="fragment">Often everyone flocks to the best known server</li>
@@ -79,10 +87,10 @@
 					</ul>
 				</section>
 
-				<section data-auto-animate><h2>Choosing a Mastodon Server</h2>
+				<section>
+					<h2>Choosing a Mastodon Server</h2>
 					<ul>
-						<li class="fragment">Like in the early days of the internet with e-mail → eco system will develop</li>
-						<li class="fragment">Topic related, Country related</li>
+						<li>Topic related, Country related</li>
 						<li class="fragment"><a href="https://joinmastodon.org/servers">https://joinmastodon.org/servers</a></li>
 						<li class="fragment">WordPress communities</li>
 						<li class="fragment"><a href="https://www.danielauener.com/the-wordpressers-guide-to-the-fediverse/">https://www.danielauener.com/the-wordpressers-guide-to-the-fediverse/</a></li>
@@ -90,84 +98,120 @@
 					</ul>
 				</section>
 
-				<section data-auto-animate><h2>Mastering the Fediverse</h2>
-					<ul>
-						<li class="fragment">Step 1: Share to the Fediverse</li>
-						<li class="fragment">Step 2: Be part of the Fediverse</li>
-						<li class="fragment">Step 3: Be the Fediverse</li>
-					</ul>
-				</section>
-
-				<section data-auto-animate><h2>Share to the Fediverse</h2>
-					<ul>
-						<li class="fragment">Use the Fediverse as a multiplicator</li>
-						<li class="fragment">Write a post on WordPress, share to the Fediverse</li>
-						<li class="fragment">Many plugins: <a href="https://wordpress.org/plugins/wp-mastodon-share/">Mastodon Auto Share</a>, <strike>Mastodon Autopost</strike>, <a href="https://wordpress.org/plugins/share-on-mastodon/">Share on Mastodon</a></li>
-						<li class="fragment">Experience like Twitter: You connect your WordPress with your Mastodon Account</li>
-					</ul>
+				<section>
+					<h2>Mastering the Fediverse</h2>
+					<ol>
+						<li class="fragment">Share to the Fediverse</li>
+						<li class="fragment">Be part of the Fediverse</li>
+						<li class="fragment">Be the Fediverse</li>
+					</ol>
 				</section>
 
 				<section>
-					<h2>WordPress to Fediverse</h2>
-					<object data="federated-from-wordpress.svg?global=paused" type="image/svg+xml"></object>
+					<section>
+						<h2>1. Share to the Fediverse</h2>
+						<ul>
+							<li>Use the Fediverse as a multiplicator</li>
+							<li class="fragment">Write a post on WordPress, share to the Fediverse</li>
+							<li class="fragment">Many plugins: <a href="https://wordpress.org/plugins/wp-mastodon-share/">Mastodon Auto Share</a>, <strike>Mastodon Autopost</strike>, <a href="https://wordpress.org/plugins/share-on-mastodon/">Share on Mastodon</a></li>
+							<li class="fragment">Experience like Twitter: You connect your WordPress with your Mastodon Account</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>1. Share to the Fediverse</h2>
+						<ul>
+							<li>When you post something, a post ("note") on your Mastodon Account is created</li>
+							<li class="fragment">→ that note will be shared with all your followers on Mastodon</li>
+							<li class="fragment">The sender is your Mastodon account</li>
+							<li class="fragment">Your account is on a hosted Mastodon server</li>
+						</ul>
+						<div style="font-size: .5em; margin-top: 8em">
+							Process
+						</div>
+					</section>
+
+					<section>
+						<h2>1. Share to the Fediverse</h2>
+						<object data="wordpress-shares-to-fediverse.svg?global=paused" type="image/svg+xml"></object>
+					</section>
+
+					<section>
+						<h2>1. Share to the Fediverse</h2>
+						<video data-autoplay data-src="img/share-on-mastodon.mp4" type="video/mp4"></video>
+						<div style="font-size: .5em; margin-top: 8em">
+							Setting it up
+						</div>
+					</section>
+
 				</section>
 
-				<section data-auto-animate><h2>Visualization</h2>
-					<ul>
-						<li class="fragment">When you post something, a post ("note") on your Mastodon Account is created</li>
-						<li class="fragment">→ that note will be shared with all your followers on Mastodon</li>
-						<li class="fragment">SVG</li>
-					</ul>
+				<section>
+					<section>
+						<h2>2. Be part of the Fediverse</h2>
+						<ul>
+							<li class="fragment">Make your WordPress speak the same protocol as Mastodon: ActivityPub</li>
+							<li class="fragment">ActivityPub plugin</li>
+							<li class="fragment">Your WordPress post is your post on Mastodon</li>
+							<li class="fragment">People don't follow your Mastodon account but they follow your blog</li>
+							<li class="fragment">Your identity = <tt>username@yourblog</tt></li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>2. Be part of the Fediverse</h2>
+						<ul>
+							<li class="fragment">People directly follow your WordPress from Mastodon</li>
+							<li class="fragment">When you post something, it directly sends your post to all your followers</li>
+							<li class="fragment">Thus, WordPress keeps track of your followers</li>
+							<li class="fragment">The posts come from <tt>username@yourblog</tt></li>
+							<li class="fragment">You use Mastodon to follow others and write status posts</li>
+						</ul>
+						<div style="font-size: .5em; margin-top: 8em">
+							Process
+						</div>
+					</section>
+
+					<section>
+						<h2>2. Be part of the Fediverse</h2>
+						<object data="wordpress-with-activitypub.svg?global=paused" type="image/svg+xml"></object>
+					</section>
+
+
+					<section>
+						<h2>2. Be part of the Fediverse</h2>
+						<video data-autoplay data-src="img/activitypub.mp4" type="video/mp4"></video>
+						<div style="font-size: .5em; margin-top: 8em">
+							Setting it up
+						</div>
+					</section>
 				</section>
 
-				<section data-auto-animate><h2>Tutorial for setting it up with Screenshots</h2>
-					<ul>
-					</ul>
+				<section>
+					<section>
+						<h2>3. Be the Fediverse</h2>
+						<ul>
+							<li class="fragment">Follow people on Mastodon, without having to choose your server</li>
+							<li class="fragment">Friends Plugin</li>
+							<li class="fragment">Main goal: Your WordPress as the center of your online identity</li>
+							<li class="fragment">Connect with people through RSS, works well with ActivityPub</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Visualization</h2>
+						<object data="wordpress-with-activitypub-friends.svg?global=paused" type="image/svg+xml"></object>
+					</section>
+
+					<section>
+						<h2>Setting it up</h2>
+						<ul>
+						</ul>
+					</section>
 				</section>
 
-				<section data-auto-animate><h2>Be part of the Fediverse</h2>
-					<ul>
-						<li class="fragment">Make your WordPress speak the same protocol as Mastodon: ActivityPub</li>
-						<li class="fragment">ActivityPub plugin</li>
-						<li class="fragment">Your WordPress post is your post on Mastodon</li>
-						<li class="fragment">People don't follow your Mastodon account but they follow your blog</li>
-						<li class="fragment">Your identity = usernam@yourblog</li>
-					</ul>
-				</section>
-
-				<section data-auto-animate><h2>Visualization</h2>
-					<ul>
-						<li class="fragment">Your WordPress sends your post to all your followers on Mastodon</li>
-						<li class="fragment">SVG</li>
-					</ul>
-				</section>
-
-				<section data-auto-animate><h2>Tutorial for setting it up with Screenshots</h2>
-					<ul>
-					</ul>
-				</section>
-
-				<section data-auto-animate><h2>Be the Fediverse</h2>
-					<ul>
-						<li class="fragment">Follow people on Mastodon, without having to choose your server</li>
-						<li class="fragment">Friends Plugin</li>
-						<li class="fragment">Main goal: Your WordPress as the center of your online identity</li>
-						<li class="fragment">Connect with people through RSS, works well with ActivityPub</li>
-					</ul>
-				</section>
-
-				<section data-auto-animate><h2>Visualization</h2>
-					<ul>
-						<li class="fragment">SVG</li>
-					</ul>
-				</section>
-
-				<section data-auto-animate><h2>Tutorial for setting it up with Screenshots</h2>
-					<ul>
-					</ul>
-				</section>
-
-				<section data-auto-animate><h2>Mastodon Experience</h2>
+				<section>
+					<h2>Mastodon Experience</h2>
 					<ul>
 						<li class="fragment">Many Mastodon clients on many platforms</li>
 						<li class="fragment">You can use them with your own WordPress </li>
@@ -177,7 +221,8 @@
 					</ul>
 				</section>
 
-				<section data-auto-animate><h2>What is more to the Friends plugin</h2>
+				<section>
+					<h2>What is more to the Friends plugin</h2>
 					<ul>
 						<li class="fragment">Connect blogs for sharing private posts just with your friends</li>
 						<li class="fragment">People focussed RSS Reader: multiple feeds per person</li>
@@ -186,13 +231,15 @@
 					</ul>
 				</section>
 
-				<section data-auto-animate><h2>Migrating between fediverse accounts</h2>
+				<section>
+					<h2>Migrating between fediverse accounts</h2>
 					<ul>
 						<li class="fragment">Mastodon has migration functionality</li>
 					</ul>
 				</section>
 
-				<section data-auto-animate><h2>Matrix</h2>
+				<section>
+					<h2>Matrix</h2>
 					<ul>
 						<li class="fragment">Real-time chat, end to end encrypted</li>
 						<li class="fragment">Aims to replace Slack but also WhatsApp, Signal, etc.</li>
@@ -201,7 +248,8 @@
 					</ul>
 				</section>
 
-				<section data-auto-animate><h2>Matrix and WordPress</h2>
+				<section>
+					<h2>Matrix and WordPress</h2>
 					<ul>
 						<li class="fragment">WordPress.org evaluating to switch from Slack to Matrix</li>
 						<li class="fragment">Chatrix Plugin: embed a Matrix chat directly on your own WordPress</li>
@@ -210,7 +258,8 @@
 					</ul>
 				</section>
 
-				<section data-auto-animate><h2>Blogging is something like the Fediverse</h2>
+				<section>
+					<h2>Blogging is something like the Fediverse</h2>
 					<ul>
 						<li class="fragment">Openness: anyone can follow your RSS feed</li>
 						<li class="fragment">Spam problem → will certainly also arrive in the Fediverse</li>
@@ -218,7 +267,8 @@
 					</ul>
 				</section>
 
-				<section data-auto-animate><h2>Summary</h2>
+				<section>
+					<h2>Summary</h2>
 					<ul>
 						<li class="fragment">The Fediverse has many facets</li>
 						<li class="fragment">ActivityPub is the protocol that powers a large part of it</li>
@@ -228,13 +278,13 @@
 
 
 
-				<section data-auto-animate>
+				<section>
 					<h2>What is the Fediverse?</h2>
 					<ul>
 						<li class="fragment">A federated system that everyone knows: E-Mail</li>
 					</ul>
 				</section>
-				<section data-auto-animate>
+				<section>
 					<h2>Centralized</h2>
 				</section>
 
@@ -248,6 +298,7 @@
 			controlsTutorial: true,
 			progress: true,
 			hash: true,
+			autoPlayMedia: true,
 			slideNumber: true
 
 		}).then( () => {
