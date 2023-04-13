@@ -45,8 +45,9 @@
 				<section>
 					<h2>What is the Fediverse?</h2>
 					<ul>
-						<li class="fragment">Decentralized Webservices</li>
-						<li class="fragment">= Instead of a single well known service name, you need to know your server</li>
+						<li>Webservices that are based on Federation</li>
+						<li class="fragment">Federation: someone else hosts your data but it's our choise who that someone is</li>
+						<li class="fragment">Instead of a single well known service name, you need to know your server</li>
 						<li class="fragment">Servers communicate among each other to enable the same experience as centralized services</li>
 					</ul>
 				</section>
@@ -54,6 +55,11 @@
 				<section>
 					<h2>Centralized</h2>
 					<object data="centralized.svg?global=paused" type="image/svg+xml"></object>
+				</section>
+
+				<section>
+					<h2>Centralized with spy</h2>
+					<object data="centralized-spy.svg?global=paused" type="image/svg+xml"></object>
 				</section>
 
 				<section>
@@ -65,6 +71,18 @@
 					<h2>Federated with 3 Servers</h2>
 					<object data="federated-wider.svg?global=paused" type="image/svg+xml"></object>
 				</section>
+
+				<section>
+					<h2>Federated with spy</h2>
+					<object data="federated-wider-spy.svg?global=paused" type="image/svg+xml"></object>
+				</section>
+			</section>
+
+			<section>
+				<h2>What is federation?</h2>
+				<ul>
+					<li>Someone stores data on your behalf</li>
+				</ul>
 			</section>
 
 			<section>
@@ -82,7 +100,7 @@
 			<section>
 				<h2>Baffling Server Choice</h2>
 				<ul>
-					<li class="fragment">Before you can start, you need to choose</li>
+					<li>Before you can start, you need to choose</li>
 					<li class="fragment">Often everyone flocks to the best known server</li>
 					<li class="fragment">→ danger of re-centralization!</li>
 					<li class="fragment"><code>username@host</code> becomes your identity.<br>Choose wisely!</li>
@@ -215,7 +233,7 @@
 			<section>
 				<h2>Mastodon Experience</h2>
 				<ul>
-					<li class="fragment">Many Mastodon clients on many platforms</li>
+					<li>Many Mastodon clients on many platforms</li>
 					<li class="fragment">You can use them with your own WordPress </li>
 					<li class="fragment">Enable Mastodon Apps plugin</li>
 					<li class="fragment">Makes your blog talk the Mastodon API</li>
@@ -226,7 +244,7 @@
 			<section>
 				<h2>What is more to the Friends plugin</h2>
 				<ul>
-					<li class="fragment">Connect blogs for sharing private posts just with your friends</li>
+					<li>Connect blogs for sharing private posts just with your friends</li>
 					<li class="fragment">People focussed RSS Reader: multiple feeds per person</li>
 					<li class="fragment">Save full articles</li>
 					<li class="fragment">Rules</li>
@@ -234,16 +252,17 @@
 			</section>
 
 			<section>
-				<h2>Migrating between fediverse accounts</h2>
+				<h2>Mastodon tidbits</h2>
 				<ul>
-					<li class="fragment">Mastodon has migration functionality</li>
+					<li>Mastodon has migration functionality, you can move to another server and take your followers along</li>
+					<li>Mastodon cannot do virtual hosts, see <a href="https://github.com/mastodon/mastodon/issues/2668">#2668</a></li>
 				</ul>
 			</section>
 
 			<section>
 				<h2>Matrix</h2>
 				<ul>
-					<li class="fragment">Real-time chat, end to end encrypted</li>
+					<li>Real-time chat, end to end encrypted</li>
 					<li class="fragment">Aims to replace Slack but also WhatsApp, Signal, etc.</li>
 					<li class="fragment">Have your own homeserver</li>
 					<li class="fragment">Already today you can use Beeper (waitlist)</li>
@@ -269,7 +288,7 @@
 			<section>
 				<h2>Blogging is also federated</h2>
 				<ul>
-					<li class="fragment">Openness: anyone can follow your RSS feed</li>
+					<li>Openness: anyone can follow your RSS feed</li>
 					<li class="fragment">Spam problem → will certainly also arrive in the Fediverse</li>
 					<li class="fragment">Web of trust → connect WordPresses? e.g. Friends Plugin</li>
 				</ul>
@@ -282,6 +301,14 @@
 					<li>ActivityPub is recently besdt known protocol</li>
 					<li>Also E-Mail, Matrix, Blogging</li>
 					<li>WordPress fits well into the puzzle</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Achknowledgements</h2>
+				<ul>
+					<li>Presentation Framework: <a href="https://www.revealjs.com/">Reveal.js</a></li>
+					<li>SVG animations: <a href="https://www.keyshapeapp.com/">Keyshape</a></li>
 				</ul>
 			</section>
 		</div>
