@@ -9,7 +9,7 @@
 			--r-heading1-size: 3em;
 		}
 		object {
-			fill: --r-background-color;
+			fill: var( --r-background-color );
 		}
 		table.contact {
 			margin-top: 2em;
@@ -23,6 +23,9 @@
 		}
 		a:link {
 			text-decoration: underline;
+		}
+		a.normal:link, a.normal:active, a.normal:visited {
+			color: var( --r-main-color );
 		}
 	</style>
 </head>
@@ -79,21 +82,24 @@
 			</section>
 
 			<section>
-				<h2>What is federation?</h2>
-				<ul>
-					<li>Someone stores data on your behalf</li>
-				</ul>
-			</section>
-
-			<section>
-				<h2>Examples</h2>
+				<h2>Examples of Fediverses</h2>
 				<ul>
 					<li>Twitter → Mastodon</li>
 					<li>Facebook → Friendica</li>
 					<li>Instagram → Pixelfed</li>
 					<li class="fragment">WhatsApp, Telegram, Signal → Matrix</li>
 					<li class="fragment">E-Mail</li>
-					<li class="fragment">Blogging (RSS!)<br/>WordPress.com, Blogspot, self-hosted</li>
+					<li class="fragment">Blogging:<br/>WordPress.com, Blogspot, self-hosted</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Protocols of Fediverses</h2>
+				<ul>
+					<li>Mastodon, Friendica, Pixelfed: ActivityPub</li>
+					<li class="fragment">Matrix: Matrix</li>
+					<li class="fragment">E-Mail: SMTP, IMAP</li>
+					<li class="fragment">Blogging: RSS</li>
 				</ul>
 			</section>
 
@@ -101,6 +107,7 @@
 				<h2>Baffling Server Choice</h2>
 				<ul>
 					<li>Before you can start, you need to choose</li>
+					<li class="fragment">Still very hard for people to set up (local) e-mail!</li>
 					<li class="fragment">Often everyone flocks to the best known server</li>
 					<li class="fragment">→ danger of re-centralization!</li>
 					<li class="fragment"><code>username@host</code> becomes your identity.<br>Choose wisely!</li>
@@ -133,7 +140,7 @@
 					<ul>
 						<li>Use the Fediverse as a multiplicator</li>
 						<li class="fragment">Write a post on WordPress, share to the Fediverse</li>
-						<li class="fragment">Many plugins: <a href="https://wordpress.org/plugins/wp-mastodon-share/">Mastodon Auto Share</a>, <strike>Mastodon Autopost</strike>, <a href="https://wordpress.org/plugins/share-on-mastodon/">Share on Mastodon</a></li>
+						<li class="fragment">Many plugins: <strike>Mastodon Auto Share</strike>, <strike>Mastodon Autopost</strike>, <a href="https://wordpress.org/plugins/share-on-mastodon/">Share on Mastodon</a></li>
 						<li class="fragment">Experience like Twitter: You connect your WordPress with your Mastodon Account</li>
 					</ul>
 				</section>
@@ -142,6 +149,7 @@
 					<h2>1. Share to the Fediverse</h2>
 					<ul>
 						<li>When you post something, a post ("note") on your Mastodon Account is created</li>
+						<li class="fragment">Typically: Title + URL</li>
 						<li class="fragment">→ that note will be shared with all your followers on Mastodon</li>
 						<li class="fragment">The sender is your Mastodon account</li>
 						<li class="fragment">Your account is on a hosted Mastodon server</li>
@@ -212,9 +220,9 @@
 					<h2>3. Be the Fediverse</h2>
 					<ul>
 						<li class="fragment">Follow people on Mastodon, without having to choose your server</li>
-						<li class="fragment">Friends Plugin</li>
-						<li class="fragment">Main goal: Your WordPress as the center of your online identity</li>
-						<li class="fragment">Connect with people through RSS, works well with ActivityPub</li>
+						<li class="fragment"><a href="https://wordpress.org/plugins/friends" class="normal">Friends Plugin</a> + <a href="https://wordpress.org/plugins/activitypub" class="normal">ActivityPub Plugin</a></li>
+						<li class="fragment">Like a Mastodon instance, with your identity</li>
+						<li class="fragment"><tt>@username@my.blog</tt></li>
 					</ul>
 				</section>
 
@@ -224,38 +232,62 @@
 				</section>
 
 				<section>
-					<h2>Setting it up</h2>
+					<h2>Mastodon Experience</h2>
 					<ul>
+						<li>Many Mastodon clients exist on many platforms</li>
+						<li class="fragment">You can use them with your own WordPress </li>
+						<li class="fragment"><a href="https://wordpress.org/plugins/enable-mastodon-apps" class="normal">Enable Mastodon Apps</a> plugin</li>
+						<li class="fragment">Makes your blog talk the Mastodon API</li>
+						<li class="fragment">Tusky, Ivory, Pinacore, Elk, Mona, ...</li>
 					</ul>
 				</section>
+
+				<section>
+					<h2>Mastodon Experience</h2>
+					<video data-autoplay data-src="img/tusky-friends.mp4" type="video/mp4" height=450></video>
+				</section>
+
 			</section>
 
 			<section>
-				<h2>Mastodon Experience</h2>
+				<h2>ActivityPub plugin</h2>
 				<ul>
-					<li>Many Mastodon clients on many platforms</li>
-					<li class="fragment">You can use them with your own WordPress </li>
-					<li class="fragment">Enable Mastodon Apps plugin</li>
-					<li class="fragment">Makes your blog talk the Mastodon API</li>
-					<li class="fragment">Tusky, Ivory, Pinacore, Elk, Mona, ...</li>
+					<li>People from Mastodon directly follow your blog</li>
+					<li class="fragment">Your blog can be followed like a Mastodon account</li>
+					<li class="fragment">When someone replies, it arrives at your blog as comment to the post</li>
+					<li class="fragment">Your blog maintains your list of followers</li>
+					<li class="fragment"><a href="https://wordpress.org/plugins/activitypub">https://wordpress.org/plugins/activitypub</a></li>
 				</ul>
 			</section>
 
 			<section>
-				<h2>What is more to the Friends plugin</h2>
+				<h2>Friends plugin</h2>
 				<ul>
-					<li>Connect blogs for sharing private posts just with your friends</li>
-					<li class="fragment">People focussed RSS Reader: multiple feeds per person</li>
-					<li class="fragment">Save full articles</li>
-					<li class="fragment">Rules</li>
+					<li>Mission: Your WordPress is your online identity</li>
+					<li class="fragment">People focussed: multiple RSS/ActivityPub feeds per person</li>
+					<li class="fragment">Private post sharing just with connected blogs</li>
+					<li class="fragment"><a href="https://github.com/akirk/friends-post-collection" class="normal">Save full articles</a> → <a href="https://github.com/akirk/friends-send-to-e-reader" class="normal">send them to your E-Reader</a></li>
+					<li class="fragment"><a href="https://wordpress.org/plugins/friends">https://wordpress.org/plugins/friends</a></li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Enable Mastodon Apps plugin</h2>
+				<ul>
+					<li>Implements the same API as the real Mastodon</li>
+					<li class="fragment">In Mastodon clients you enter your blog URL</li>
+					<li class="fragment">Not the whole API implemented yet, but usable</li>
+					<li class="fragment"><a href="https://wordpress.org/plugins/enable-mastodon-apps" style="font-size: 90%">https://wordpress.org/plugins/enable-mastodon-apps</a></li>
 				</ul>
 			</section>
 
 			<section>
 				<h2>Mastodon tidbits</h2>
 				<ul>
-					<li>Mastodon has migration functionality, you can move to another server and take your followers along</li>
-					<li>Mastodon cannot do virtual hosts, see <a href="https://github.com/mastodon/mastodon/issues/2668">#2668</a></li>
+					<li>Mastodon doesn't lock you in: you can move to another server and take your followers along</li>
+					<li class="fragment">Mastodon cannot do virtual hosts, see <a href="https://github.com/mastodon/mastodon/issues/2668" class="normal">#2668</a></li>
+					<li class="fragment">you need to host it yourself for a nice address (e.g. with <a href="https://masto.host" class="normal">masto.host</a>)</li>
+					<li class="fragment">A huge software stack → use your own WordPress?</li>
 				</ul>
 			</section>
 
@@ -263,9 +295,9 @@
 				<h2>Matrix</h2>
 				<ul>
 					<li>Real-time chat, end to end encrypted</li>
-					<li class="fragment">Aims to replace Slack but also WhatsApp, Signal, etc.</li>
-					<li class="fragment">Have your own homeserver</li>
-					<li class="fragment">Already today you can use Beeper (waitlist)</li>
+					<li class="fragment">Federated, using homeservers</li>
+					<li class="fragment">Aims to replace Slack; also WhatsApp, Signal, etc.</li>
+					<li class="fragment">Multi-messenger with Matrix possible today with <a href="https://www.beeper.com/" class="normal">Beeper</a> (waitlist)</li>
 				</ul>
 			</section>
 
@@ -273,10 +305,11 @@
 				<section>
 					<h2>Matrix and WordPress</h2>
 					<ul>
-						<li class="fragment"><a href="https://make.wordpress.org/meta/2023/01/25/a-meta-subproject-for-evaluating-matrix/">WordPress.org evaluating to switch from Slack to Matrix</a></li>
-						<li class="fragment"><a href="https://wordpress.org/plugins/chatrix/">Chatrix Plugin</a>: embed a Matrix chat directly on your own WordPress</li>
-						<li class="fragment">Single-Room mode!</li>
-						<li class="fragment">WordPress.org: SSO to use your own WordPress account as an account on Matrix</li>
+						<li><a href="https://make.wordpress.org/meta/2023/01/25/a-meta-subproject-for-evaluating-matrix/" class="normal">WordPress.org will switch from Slack to Matrix</a></li>
+						<li class="fragment">Embed a Matrix chat directly on your own WordPress with <a href="https://wordpress.org/plugins/chatrix/" class="normal">Chatrix</a></li>
+						<li class="fragment">Gutenberg block around the <a href="https://github.com/vector-im/hydrogen-web" class="normal"> Hydrogen client</a></li>
+						<li class="fragment">Can be restricted to a single room</li>
+						<li class="fragment">WordPress.org: <a href="https://github.com/Automattic/wp-openid-connect-server" class="normal">SSO to use your own WordPress account</a> as an account on Matrix</li>
 					</ul>
 				</section>
 				<section>
@@ -290,7 +323,7 @@
 				<ul>
 					<li>Openness: anyone can follow your RSS feed</li>
 					<li class="fragment">Spam problem → will certainly also arrive in the Fediverse</li>
-					<li class="fragment">Web of trust → connect WordPresses? e.g. Friends Plugin</li>
+					<li class="fragment">Web of trust → connect WordPresses?</li>
 				</ul>
 			</section>
 
@@ -305,10 +338,17 @@
 			</section>
 
 			<section>
-				<h2>Achknowledgements</h2>
+				<h2>Slides</h2>
+					<p><a href="https://alex.kirk.at/wcvie-2023/">https://alex.kirk.at/wcvie-2023/</a></p>
+					<table style="font-size: 80%">
+						<tr><td>ActivityPub</td><td>Matrix</td></tr>
+						<tr><td><tt style="font-size: 90%">@alex@kirk.at</tt></td><td><tt style="font-size: 90%">@alex:kirk.at</tt></td></tr>
+					</table>
+
+				<h4 style="margin-top: 2em">Acknowledgements</h4>
 				<ul>
-					<li>Presentation Framework: <a href="https://www.revealjs.com/">Reveal.js</a></li>
-					<li>SVG animations: <a href="https://www.keyshapeapp.com/">Keyshape</a></li>
+					<li style="font-size: 80%">Presentation Framework: <a href="https://www.revealjs.com/">Reveal.js</a></li>
+					<li style="font-size: 80%">SVG animations: <a href="https://www.keyshapeapp.com/">Keyshape.app</a></li>
 				</ul>
 			</section>
 		</div>
