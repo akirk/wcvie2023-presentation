@@ -49,7 +49,7 @@
 					<h2>What is the Fediverse?</h2>
 					<ul>
 						<li>Webservices that are based on Federation</li>
-						<li class="fragment">Federation: someone else hosts your data but it's our choise who that someone is</li>
+						<li class="fragment">Federation: someone else hosts your data but it's our choice who that someone is</li>
 						<li class="fragment">Instead of a single well known service name, you need to know your server</li>
 						<li class="fragment">Servers communicate among each other to enable the same experience as centralized services</li>
 					</ul>
@@ -104,7 +104,7 @@
 			</section>
 
 			<section>
-				<h2>Baffling Server Choice</h2>
+				<h2>How do I start to use the Fediverse?</h2>
 				<ul>
 					<li>Before you can start, you need to choose</li>
 					<li class="fragment">Still very hard for people to set up (local) e-mail!</li>
@@ -358,6 +358,7 @@
 		</div>
 	</div>
 	<script src="dist/reveal.js"></script>
+	<script src="reveal.js/plugin/notes/notes.js"></script>
 	<script>
 		Reveal.initialize({
 			controls: true,
@@ -365,8 +366,8 @@
 			progress: true,
 			hash: true,
 			autoPlayMedia: true,
-			slideNumber: true
-
+			slideNumber: true,
+			plugins: [ RevealNotes ]
 		}).then( () => {
 		});
 	</script>
