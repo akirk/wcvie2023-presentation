@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
+	<title>Alex Kirk: WordPress and the Fediverse #wcvie-2023</title>
 	<link rel="stylesheet" href="dist/reveal.css">
 	<link rel="stylesheet" href="dist/theme/moon.css">
 	<style>
@@ -57,9 +58,9 @@
 				<section>
 					<h2>What is the Fediverse?</h2>
 					<ul>
-						<li class="fragment">Federated Webservices</li>
+						<li class="fragment">Federated (Social) Services</li>
 						<li class="fragment">Federation: someone else hosts your data but it's our choice who that someone is</li>
-						<li class="fragment">You need to know your server</li>
+						<li class="fragment">To get started, you need to specify your server</li>
 						<li class="fragment">A little more complex than centralized services</li>
 					</ul>
 				</section>
@@ -126,7 +127,7 @@
 				<ul style="margin: 0 2em">
 					<li>Twitter recently made a lot of changes, cut off apps, increased API prices, etc.</li>
 					<li class="fragment">In the tech community, many people migrated to Mastodon</li>
-					<li class="fragment">Mastodon is a gGmbH in Germany, owns the trademark</li>
+					<li class="fragment">Mastodon is a gGmbH (non-profit company) in Germany, owns the trademark</li>
 					<li class="fragment"><a href="https://github.com/mastodon/mastodon/" class="normal">Mastodon is open source software</a> that talks ActivityPub</li>
 				</ul>
 			</section>
@@ -151,7 +152,6 @@
 				<h2>Types of Mastodon Servers</h2>
 				<ul>
 					<li>Topic related, Country related</li>
-					<li class="fragment"></li>
 					<li class="fragment"><img src="img/joinmastodon.png" alt="joinmastodon.org" height="400" /><br/><a class="normal small" href="https://joinmastodon.org/servers">https://joinmastodon.org/servers</a></li>
 				</ul>
 			</section>
@@ -159,7 +159,8 @@
 			<section>
 				<h2>How to choose a Mastodon Server?</h2>
 				<ul>
-					<li><code>username@server</code> becomes your identity</li>
+					<li>A server is sometimes also called "instance"</li>
+					<li class="fragment">You choose the "<code>@server</code>" in <code>username@server</code> → it becomes your identity</li>
 					<li class="fragment">Why Topic related or Country related?</li>
 					<li class="fragment">→ Local timelines</li>
 				</ul>
@@ -189,16 +190,16 @@
 					<h2>1. Share to the Fediverse</h2>
 					<ul>
 						<li>Use the Fediverse as a multiplicator</li>
-						<li class="fragment">Write a post on WordPress, share to the Fediverse</li>
+						<li class="fragment">Write a post on WordPress, share to the Fediverse → more visitors</li>
 						<li class="fragment">Many plugins: <strike>Mastodon Auto Share</strike>, <strike>Mastodon Autopost</strike>, <a href="https://wordpress.org/plugins/share-on-mastodon/">Share on Mastodon</a></li>
-						<li class="fragment">Like you might know it from Twitter: You connect your WordPress with your Mastodon Account</li>
+						<li class="fragment">How? You might know it from Twitter: You connect your WordPress with your Mastodon account</li>
 					</ul>
 				</section>
 
 				<section>
 					<h2>1. Share to the Fediverse</h2>
 					<ul>
-						<li>When you post something, a post ("note") on your Mastodon Account is created</li>
+						<li>When you post something, a post ("note") on your Mastodon account is created</li>
 						<li class="fragment">Typically: Title + URL</li>
 						<li class="fragment">→ that note will be shared with all your followers on Mastodon</li>
 						<li class="fragment">The sender is your (hosted) Mastodon account</li>
@@ -227,8 +228,8 @@
 				<section>
 					<h2>2. Be part of the Fediverse</h2>
 					<ul>
-						<li class="fragment">Make your WordPress speak the same protocol as Mastodon: ActivityPub</li>
-						<li class="fragment"><a href="https://wordpress.org/plugins/activitypub" class="normal">ActivityPub plugin</a></li>
+						<li class="fragment">Teach your WordPress speak the same protocol as Mastodon: ActivityPub</li>
+						<li class="fragment">→ <a href="https://wordpress.org/plugins/activitypub" class="normal">ActivityPub plugin</a></li>
 						<li class="fragment">Your WordPress post is your post on Mastodon</li>
 						<li class="fragment">People don't follow your Mastodon account but they follow your blog</li>
 						<li class="fragment">Your identity = <tt>@username@my.blog</tt></li>
@@ -238,7 +239,7 @@
 				<section>
 					<h2>2. Be part of the Fediverse</h2>
 					<ul>
-						<li class="fragment">People directly follow your WordPress from Mastodon</li>
+						<li class="fragment">People directly follow your WordPress, you tell them to follow <tt>@username@my.blog</tt></li>
 						<li class="fragment">When you post something, it directly sends your post to all your followers</li>
 						<li class="fragment">Thus, WordPress keeps track of your followers</li>
 						<li class="fragment">The posts come from <tt>@username@my.blog</tt></li>
@@ -269,7 +270,7 @@
 					<h2>3. Be the Fediverse</h2>
 					<ul>
 						<li>Follow people on Mastodon, without having to choose your server (your blog is your server)</li>
-						<li class="fragment"><a href="https://wordpress.org/plugins/friends" class="normal">Friends plugin</a> + <a href="https://wordpress.org/plugins/activitypub" class="normal">ActivityPub plugin</a></li>
+						<li class="fragment">→ <a href="https://wordpress.org/plugins/friends" class="normal">Friends plugin</a> + <a href="https://wordpress.org/plugins/activitypub" class="normal">ActivityPub plugin</a></li>
 						<li class="fragment">Like a Mastodon instance, with your own identity</li>
 						<li class="fragment"><tt>@username@my.blog</tt></li>
 					</ul>
@@ -288,9 +289,9 @@
 				<section>
 					<h2>Use Mastodon Apps</h2>
 					<ul>
-						<li>Nice apps for Mastodon on many platforms</li>
+						<li>Nice apps exist for Mastodon on many platforms</li>
 						<li class="fragment">You can also use them with your own WordPress!</li>
-						<li class="fragment"><a href="https://wordpress.org/plugins/enable-mastodon-apps" class="normal">Enable Mastodon Apps</a> plugin</li>
+						<li class="fragment">→ <a href="https://wordpress.org/plugins/enable-mastodon-apps" class="normal">Enable Mastodon Apps</a> plugin</li>
 						<li class="fragment">Makes your blog talk the Mastodon API</li>
 						<li class="fragment"><a class="normal" href="https://tusky.app/">Tusky</a>, <a class="normal" href="https://tapbots.com/ivory/">Ivory</a>, <a class="normal" href="https://pinafore.blog/">Pinafore</a>, <a class="normal" href="https://elk.zone">Elk</a>, <a class="normal" href="https://mastodon.social/@MonaApp">Mona</a>, ...</li>
 					</ul>
@@ -308,7 +309,7 @@
 				<ul>
 					<li>People from Mastodon directly follow your blog</li>
 					<li class="fragment">Your blog can be followed like a Mastodon account</li>
-					<li class="fragment">When someone replies, it arrives at your blog as comment to the post</li>
+					<li class="fragment">When someone replies, it arrives at your blog as a comment on the post</li>
 					<li class="fragment">Your blog maintains your list of followers</li>
 					<li class="fragment"><a href="https://wordpress.org/plugins/activitypub">https://wordpress.org/plugins/activitypub</a></li>
 				</ul>
@@ -347,7 +348,7 @@
 				<h2>Enable Mastodon Apps plugin by <img src="img/alex.kirk.jpg" alt="Alex Kirk" height="64" style="border-radius: 32px; vertical-align: bottom;"></h2>
 				<ul>
 					<li>Implements the same API as the real Mastodon</li>
-					<li class="fragment">In Mastodon clients you enter your blog URL</li>
+					<li class="fragment">Enter your blog URL as instance in Mastodon apps</li>
 					<li class="fragment">Not the whole API implemented yet, but usable</li>
 					<li class="fragment"><a href="https://wordpress.org/plugins/enable-mastodon-apps" style="font-size: 90%">https://wordpress.org/plugins/enable-mastodon-apps</a></li>
 				</ul>
@@ -363,7 +364,7 @@
 			<section>
 				<h2>Super Easy to join the fediverse</h2>
 				<ul>
-					<li>Your own WordPress + plugins</li>
+					<li>Your own WordPress + plugins<br/><a href="https://wordpress.org/plugins/activitypub" class="normal">ActivityPub</a>, <a href="https://wordpress.org/plugins/friends" class="normal">Friends</a>, <a href="https://wordpress.org/plugins/enable-mastodon-apps" class="normal">EMA</a></li>
 					<li class="fragment">Use the Mastodon apps</li>
 					<li class="fragment">Identity: <tt>@username@my.blog</tt></li>
 				</ul>
@@ -384,7 +385,7 @@
 					<li>Real-time chat, end to end encrypted</li>
 					<li class="fragment">Aims to replace Slack; also WhatsApp, Signal, etc.</li>
 					<li class="fragment">Federated, using homeservers</li>
-					<li class="fragment">Multi-messenger with Matrix possible today with <a href="https://www.beeper.com/" class="normal">Beeper</a> <object data="img/beeper.svg" type="image/svg+xml" width="32" height="32"></object> (waitlist)</li>
+					<li class="fragment">Multi-messenger with Matrix possible today with <a href="https://www.beeper.com/" class="normal">Beeper</a> <object data="img/beeper.svg" type="image/svg+xml" width="32" height="32"></object> (join the waitlist)</li>
 				</ul>
 			</section>
 
@@ -413,8 +414,9 @@
 				<h2>Blogging is also federated</h2>
 				<ul>
 					<li>Openness: anyone can follow your RSS feed <img src="img/rss.png" width="32" height="32" style="vertical-align: top; margin-top: 10px; "/></li>
-					<li class="fragment">Spam problem → will certainly also arrive in the Fediverse</li>
+					<li class="fragment">Comments have a spam problem → will certainly also arrive in the Fediverse</li>
 					<li class="fragment">Web of trust → connect WordPresses?</li>
+					<li class="fragment"><a href="https://indieweb.org" class="normal">IndieWeb</a>, <a href="https://geminiquickst.art" class="normal">Gemini</a> (Small web)</li>
 				</ul>
 			</section>
 
@@ -431,10 +433,10 @@
 			<section>
 				<h2>Links</h2>
 				<ul>
-					<li><a href="https://wordpress.org/plugins/share-on-mastodon"><span class="normal">wordpress.org/plugins/</span>share-on-mastodon</a></li>
-					<li><a href="https://wordpress.org/plugins/activitypub"><span class="normal">wordpress.org/plugins/</span>activitypub</a></li>
-					<li><a href="https://wordpress.org/plugins/friends"><span class="normal">wordpress.org/plugins/</span>friends</a></li>
-					<li><a href="https://wordpress.org/plugins/enable-mastodon-apps"><span class="normal">wordpress.org/plugins/</span>enable-mastodon-apps</a></li>
+					<li><a href="https://wordpress.org/plugins/share-on-mastodon" class="normal">wordpress.org/plugins/</a><a href="https://wordpress.org/plugins/share-on-mastodon">share-on-mastodon</a></li>
+					<li><a href="https://wordpress.org/plugins/activitypub" class="normal">wordpress.org/plugins/</a><a href="https://wordpress.org/plugins/activitypub">activitypub</a></li>
+					<li><a href="https://wordpress.org/plugins/friends" class="normal">wordpress.org/plugins/</a><a href="https://wordpress.org/plugins/friends">friends</a></li>
+					<li><a href="https://wordpress.org/plugins/enable-mastodon-apps" class="normal">wordpress.org/plugins/</a><a href="https://wordpress.org/plugins/enable-mastodon-apps">enable-mastodon-apps</a></li>
 					<li><a href="https://joinmastodon.org/servers">joinmastodon.org/servers</a></li>
 					<li><a href="https://joinfediverse.wiki">joinfediverse.wiki</a></li>
 				</ul>
